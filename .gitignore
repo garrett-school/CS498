@@ -1,6 +1,7 @@
 /__pycache__
 /snapshots.db
 .env
+env
 .venv/
 .venv-wsl/
 config/
