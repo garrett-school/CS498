@@ -1,0 +1,7 @@
+/__pycache__
+/snapshots.db
+.env
+.venv/
+.venv-wsl/
+config/
+**/__pycache__/
