@@ -3,7 +3,10 @@
 <text x="300.0" y="30" text-anchor="middle" font-size="20">Cache Attempt Results</text>
 <line x1="60" y1="340" x2="540" y2="340" stroke="black"/>
 <line x1="60" y1="60" x2="60" y2="340" stroke="black"/>
-<rect x="60.0" y="60.0" width="480.0" height="280.0" fill="steelblue"/>
-<text x="300.0" y="360" text-anchor="middle" font-size="12">Result -1</text>
-<text x="300.0" y="55.0" text-anchor="middle" font-size="12">48</text>
+<rect x="60.0" y="291.30434782608694" width="230.0" height="48.69565217391304" fill="steelblue"/>
+<text x="175.0" y="360" text-anchor="middle" font-size="12">Result -1</text>
+<text x="175.0" y="286.30434782608694" text-anchor="middle" font-size="12">12</text>
+<rect x="310.0" y="60.0" width="230.0" height="280.0" fill="steelblue"/>
+<text x="425.0" y="360" text-anchor="middle" font-size="12">Result 1</text>
+<text x="425.0" y="55.0" text-anchor="middle" font-size="12">69</text>
 </svg>

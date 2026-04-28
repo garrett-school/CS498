@@ -2,6 +2,7 @@
 /snapshots.db
 .env
 env
+venv/
 .venv/
 .venv-wsl/
 config/

@@ -9,12 +9,22 @@ def main():
     else:
         cmd = ["fatrace"]
 
+    db = DatabaseDriver.SnapshotDB()
+    receiver = DatabaseDriver.SnapshotReceiver(db)
+
+    AbstractionLayers.BatchSend = DatabaseDriver.patched_batch_send_factory(
+        receiver, AbstractionLayers.BatchSend
+    )
+    AbstractionLayers.TryCache = DatabaseDriver.patched_trycache_factory(
+        receiver, AbstractionLayers.TryCache
+    )
+
     try:
         AbstractionLayers.FAstream(cmd, printflag=True)
     except KeyboardInterrupt:
         print("\nStopped.")
     finally:
-        DatabaseDriver.close()
+        db.close()
         DatabaseDriver.graph_cache_results()
 
 

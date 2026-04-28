@@ -27,7 +27,7 @@ FullSuggestionList = []
 def FAstream(cmd, printflag=False):
     # bufsize=1 enables line buffering; shell=False is safer if cmd is a list
     deliniator = " "
-    batchsize = 25  # may want to increase for the PoC to reduce API tokens!
+    batchsize = 5  # may want to increase for the PoC to reduce API tokens!
 
     # cwd = os.getcwd().rpartition("/")[2]
 
